@@ -1,0 +1,243 @@
+*{
+    padding:0;
+    margin:0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+a{
+    color:inherit;
+    text-decoration: none;
+}
+
+body{
+    /* 'Noto Sans KR', sans-serif/ 13px/ 24px/ #333 */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:13px;
+    line-height:24px;
+    color:#333;
+    background-color: black;
+}
+
+/* header s */
+
+.header_wrap{
+    width:100%;
+    height:80px;
+    background-color: #fff;
+}
+
+.header{
+    width:1200px;
+    margin:0 auto;
+    padding-top:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    flex-grow: 5;
+}
+
+.gnb{
+    display: flex;
+    flex-grow:1;
+    align-items: center;
+}
+
+.gnb li a{
+    display: block;
+    padding-left:50px;
+    font-weight:bold;
+}
+
+.gnb li a:hover{
+    color:red;
+}
+
+.search_box{
+    border:1px solid black;
+    width:200px;
+    padding:3px 10px;
+    border-radius: 20px;
+    position:relative;
+}
+
+.search a img{
+    margin:5px 20px 2px 2px;
+}
+
+.search a{
+    display: block;
+    color:gray;
+    font-size:14px;
+}
+
+.search ul{
+    display: flex;
+}
+
+.search p{
+    font-size:12px;
+}
+
+.search_wrap input{
+    border-style:none;
+}
+
+/* header e */
+
+/* main s */
+
+.main{
+    height:720px;
+    position:relative;
+    overflow: hidden;
+}
+
+.main video{
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-960px;
+    /* 절반만큼 옮긴 다음에 영상의 절반 만큼 다시 옮김 */
+    width:1920px;
+    height:720px;
+}
+
+/* 나머지 부분 따로 꾸미기가 없기 때문에 하나로 묶어서 작업해도 됨 */
+
+/* main e */
+
+/* section1 s */
+
+.s1{
+    margin:50px auto;
+    width:1200px;
+    text-align: center;
+    color:#fff;
+    height:700px;
+    background: url(../images/main/pt1.jpg)
+    no-repeat;
+    background-position: top 80px left -150px;
+}
+
+.s1 h1{
+    font-size:40px;  
+    letter-spacing: 2px;
+}
+
+.s1>ul{
+    display: flex;
+    justify-content: center;
+    margin-top:50px;
+}
+
+.s1>ul>li>a{
+    display: inline-block;
+    /* 버튼에 inline-block */
+    border:1px solid red;
+    padding:13px 20px;
+    font-size:12px;
+}
+
+.s1>ul>li>a:nth-child(1){
+    margin-right:10px;
+}
+
+.s1>ul>li>a:hover{
+    background-color: red;
+}
+
+/* section1 e */
+
+/* section2 s */
+
+.s2{
+    width:1200px;
+    margin:0 auto;
+    height:300px;
+    color:#fff;
+    text-align: center;
+}
+
+.s2 h1{
+    font-size:40px;  
+    letter-spacing: 2px;
+    margin-bottom:20px;
+}
+
+.s2_button a{
+    display: inline-block;
+    padding:13px;
+    border:1px solid red;
+    width:70px;
+    text-align: center;
+    margin:0 auto;
+    font-size:12px;
+}
+
+.s2_button a:hover{
+    background-color: red;
+}
+
+.s2_text{
+    padding-bottom:30px;
+    font-size:15px;
+    letter-spacing: 2px;
+}
+
+/* section2 e */
+
+/* section3 s */
+
+.s3{
+    background:url(../images/main/pt2.jpg)
+    no-repeat center;
+    height:800px;
+}
+
+/* section3 e */
+
+/* section4 s */
+
+.s4{
+    background:url(../images/main/pt3.jpg)
+    no-repeat center;
+    height:800px;
+}
+
+/* section4 e */
+
+/* footer s */
+
+.footer{
+    width:1200px;
+    margin:0 auto;
+    color:#fff;
+    height:300px;
+}
+
+.footer ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul li a h4{
+    margin-bottom:10px;
+}
+
+.footer ul li a p{
+    font-size:10px;
+    color:#ffffff85;
+}
+
+.footer ul li a p:hover{
+    color:#fff;
+}
+
+/* footer e */
+
